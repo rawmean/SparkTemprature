@@ -23,6 +23,7 @@
 		F540A6D318AFF59C00BFA006 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F540A6D118AFF59C00BFA006 /* InfoPlist.strings */; };
 		F540A6D518AFF59C00BFA006 /* SparkTemperatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F540A6D418AFF59C00BFA006 /* SparkTemperatureTests.m */; };
 		F540A6DF18B0046600BFA006 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F540A6DE18B0046600BFA006 /* bg.png */; };
+		F540A6E218B02FC000BFA006 /* MeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F540A6E118B02FC000BFA006 /* MeterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		F540A6D218AFF59C00BFA006 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F540A6D418AFF59C00BFA006 /* SparkTemperatureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkTemperatureTests.m; sourceTree = "<group>"; };
 		F540A6DE18B0046600BFA006 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		F540A6E018B02FC000BFA006 /* MeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterView.h; sourceTree = "<group>"; };
+		F540A6E118B02FC000BFA006 /* MeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 		F540A6AC18AFF59C00BFA006 /* SparkTemperature */ = {
 			isa = PBXGroup;
 			children = (
+				F540A6E018B02FC000BFA006 /* MeterView.h */,
+				F540A6E118B02FC000BFA006 /* MeterView.m */,
 				F540A6B518AFF59C00BFA006 /* SparkAppDelegate.h */,
 				F540A6B618AFF59C00BFA006 /* SparkAppDelegate.m */,
 				F540A6B818AFF59C00BFA006 /* Main_iPhone.storyboard */,
@@ -260,6 +265,7 @@
 			files = (
 				F540A6B718AFF59C00BFA006 /* SparkAppDelegate.m in Sources */,
 				F540A6B318AFF59C00BFA006 /* main.m in Sources */,
+				F540A6E218B02FC000BFA006 /* MeterView.m in Sources */,
 				F540A6C018AFF59C00BFA006 /* SparkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +485,7 @@
 				F540A6DA18AFF59C00BFA006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F540A6DB18AFF59C00BFA006 /* Build configuration list for PBXNativeTarget "SparkTemperatureTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +494,7 @@
 				F540A6DD18AFF59C00BFA006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

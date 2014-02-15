@@ -7,13 +7,20 @@
 //
 
 #import "SparkViewController.h"
-#define ACCESS_TOKEN @"YOUR_ACCESS_TOKEN_HERE"
-#define CORE_ID @"YOUR_CORE_ID_HERE"
+#import "MeterView.h"
 
-@interface SparkViewController () <NSURLSessionDataDelegate>
+
+#define ACCESS_TOKEN @"1740bb7a80b2f5b1095e974d68ab7f17e3d9af8a"
+#define CORE_ID @"48ff72065067555041281587"
+
+@interface SparkViewController () <NSURLSessionDataDelegate> {
+    MeterView *needleView;
+	MeterView *voltmeterView;
+}
 
 @property (strong, nonatomic) NSURLSession *session;
 @property (weak, nonatomic) IBOutlet UILabel *tempLabel;
+@property (weak, nonatomic) IBOutlet MeterView *needleView;
 
 @end
 
@@ -47,10 +54,11 @@
         temp = temp*3.3/4095;
         temp = (temp - .5)*100;
         temp = temp/100*180.+32;
-        NSString *tempStr = [NSString stringWithFormat:@"Temperature = %2.1f", temp];
+        NSString *tempStr = [NSString stringWithFormat:@"Temperature = %2.1f F", temp];
         dispatch_sync(dispatch_get_main_queue(), ^{
             
             self.tempLabel.text = tempStr;
+            self.needleView.value = temp;
         });
         NSLog(@"Temperature = %2.1f", temp);
         
@@ -64,7 +72,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.needleView.textLabel.text = @"Fahrenheit";
+	self.needleView.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-BoldItalic" size:18.0];
+	self.needleView.lineWidth = 2.5;
+	self.needleView.minorTickLength = 15.0;
+	self.needleView.needle.width = 3.0;
+	self.needleView.textLabel.textColor = [UIColor colorWithRed:0.7 green:1.0 blue:1.0 alpha:1.0];
+	self.needleView.textLabel.textColor = [UIColor whiteColor];
+//	self.needleView.minNumber = 0.0;
+//	self.needleView.minNumber = 120.0;
+    
+	self.needleView.value = 0.0;
 }
 
 - (void) viewWillAppear:(BOOL)animated {
