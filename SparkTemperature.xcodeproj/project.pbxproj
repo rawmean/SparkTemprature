@@ -22,6 +22,7 @@
 		F540A6CB18AFF59C00BFA006 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F540A6AA18AFF59C00BFA006 /* UIKit.framework */; };
 		F540A6D318AFF59C00BFA006 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F540A6D118AFF59C00BFA006 /* InfoPlist.strings */; };
 		F540A6D518AFF59C00BFA006 /* SparkTemperatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F540A6D418AFF59C00BFA006 /* SparkTemperatureTests.m */; };
+		F540A6DF18B0046600BFA006 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F540A6DE18B0046600BFA006 /* bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F540A6D018AFF59C00BFA006 /* SparkTemperatureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SparkTemperatureTests-Info.plist"; sourceTree = "<group>"; };
 		F540A6D218AFF59C00BFA006 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F540A6D418AFF59C00BFA006 /* SparkTemperatureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkTemperatureTests.m; sourceTree = "<group>"; };
+		F540A6DE18B0046600BFA006 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		F540A6AD18AFF59C00BFA006 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F540A6DE18B0046600BFA006 /* bg.png */,
 				F540A6AE18AFF59C00BFA006 /* SparkTemperature-Info.plist */,
 				F540A6AF18AFF59C00BFA006 /* InfoPlist.strings */,
 				F540A6B218AFF59C00BFA006 /* main.m */,
@@ -236,6 +239,7 @@
 				F540A6C218AFF59C00BFA006 /* Images.xcassets in Resources */,
 				F540A6BA18AFF59C00BFA006 /* Main_iPhone.storyboard in Resources */,
 				F540A6B118AFF59C00BFA006 /* InfoPlist.strings in Resources */,
+				F540A6DF18B0046600BFA006 /* bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
