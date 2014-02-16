@@ -166,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F540A6A218AFF59C00BFA006 /* SparkTemperature */ = {
+		F540A6A218AFF59C00BFA006 /* Temperature */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F540A6D818AFF59C00BFA006 /* Build configuration list for PBXNativeTarget "SparkTemperature" */;
+			buildConfigurationList = F540A6D818AFF59C00BFA006 /* Build configuration list for PBXNativeTarget "Temperature" */;
 			buildPhases = (
 				F540A69F18AFF59C00BFA006 /* Sources */,
 				F540A6A018AFF59C00BFA006 /* Frameworks */,
@@ -178,7 +178,7 @@
 			);
 			dependencies = (
 			);
-			name = SparkTemperature;
+			name = Temperature;
 			productName = SparkTemperature;
 			productReference = F540A6A318AFF59C00BFA006 /* SparkTemperature.app */;
 			productType = "com.apple.product-type.application";
@@ -229,7 +229,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F540A6A218AFF59C00BFA006 /* SparkTemperature */,
+				F540A6A218AFF59C00BFA006 /* Temperature */,
 				F540A6C618AFF59C00BFA006 /* SparkTemperatureTests */,
 			);
 		};
@@ -283,7 +283,7 @@
 /* Begin PBXTargetDependency section */
 		F540A6CD18AFF59C00BFA006 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F540A6A218AFF59C00BFA006 /* SparkTemperature */;
+			target = F540A6A218AFF59C00BFA006 /* Temperature */;
 			targetProxy = F540A6CC18AFF59C00BFA006 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -478,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F540A6D818AFF59C00BFA006 /* Build configuration list for PBXNativeTarget "SparkTemperature" */ = {
+		F540A6D818AFF59C00BFA006 /* Build configuration list for PBXNativeTarget "Temperature" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F540A6D918AFF59C00BFA006 /* Debug */,
