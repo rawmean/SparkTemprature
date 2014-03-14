@@ -10,8 +10,8 @@
 #import "MeterView.h"
 
 
-#define ACCESS_TOKEN @"1740bb7a80b2f5b1095e974d68ab7f17e3d9af8a"
-#define CORE_ID @"48ff72065067555041281587"
+#define ACCESS_TOKEN @""
+#define CORE_ID @""
 
 @interface SparkViewController () <NSURLSessionDataDelegate> {
     MeterView *needleView;
